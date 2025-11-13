@@ -16,13 +16,13 @@ function getRandomColor(){
     return result;
 }
 
-funtion addSquare(){
+function addSquare(){
     var squarearea = document.getElementById("squarearea");
     var newSquare = document.createElement('div');
     newSquare.className="square";
     newSquare.style.left = parseInt(Math.random()*651)+"px";
     newSquare.style.top = parseInt(Math.random()*251)+"px";
-    newSquare.stylr.backgroundColor=getRandomColor();
+    newSquare.style.backgroundColor=getRandomColor();
     squarearea.appendChild(newSquare);
     }
 
