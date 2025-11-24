@@ -1,3 +1,5 @@
+var topZ= 0;
+
 window.onload = function (){
     var add = document.getElementById("add");
     add.onclick = addSquare;
