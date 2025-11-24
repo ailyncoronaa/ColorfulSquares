@@ -33,7 +33,7 @@ function addSquare(){
 
 
 function changeColors(){
-    var squares = document.getElementsByClassName("square");
+    var squares = document.querySelectorAll(".square");
     for (var i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor =  getRandomColor();
     }
