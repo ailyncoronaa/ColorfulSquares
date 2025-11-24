@@ -30,6 +30,9 @@ function addSquare(){
     newSquare.style.left = parseInt(Math.random()*651)+"px";
     newSquare.style.top = parseInt(Math.random()*251)+"px";
     newSquare.style.backgroundColor=getRandomColor();
+    var size = 45 + parseInt(Math.random()* 11);
+    newSquare.style.width = size + "px";
+    newSquare.style.height = size + "px";
     newSquare.onclick = squareClick;
     squarearea.appendChild(newSquare);
     
