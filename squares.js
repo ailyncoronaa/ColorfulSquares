@@ -1,10 +1,15 @@
-window.onload=function(){
-    var add= document.getElementById("add");
+window.onload = function (){
+    var add = document.getElementById("add");
     add.onclick = addSquare;
-    var squareCount = parseInt(Math.random()*21)+30;
-    for (let i = 0; i < squareCount; i ++){
+
+    var colors = document.getElementById("colors");
+    colors.onclick = changeColors
+
+    var squareCount = parseInt(Math.random() * 1000) + 30;
+    for (let i = 0; i < squareCount; i++){
         addSquare();
-   
+    }
+
 }
 function getRandomColor(){
     var possibilities = "0123456789ABCDEF";
@@ -26,4 +31,10 @@ function addSquare(){
     squarearea.appendChild(newSquare);
     }
 
+
+function changeColors(){
+    var squares = document.getElementsByClassName("square");
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor =  getRandomColor();
+    }
 }
